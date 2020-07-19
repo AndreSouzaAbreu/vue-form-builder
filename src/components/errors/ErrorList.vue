@@ -6,7 +6,7 @@
 			</span>
 		</button>
 
-		<div v-if="shouldDisplayMessage">
+		<div v-if="shouldDisplayErrorMessage">
 			{{ errorMessage }}
 		</div>
 

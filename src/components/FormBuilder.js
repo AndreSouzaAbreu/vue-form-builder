@@ -15,8 +15,8 @@ files.keys().forEach(key => {
 	}
 })
 
-// import helpers
 import fieldParser from '../fieldParser'
+import Form from '../Form'
 
 export default {
 	name: "FormBuilder",
@@ -89,7 +89,7 @@ export default {
 		},
 		form: {
 			type: Object,
-			default: () => ({})
+			default: () => new Form()
 		},
 		enableButtons: {
 			type: Boolean,
